@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111114" media="(prefers-color-scheme: dark)">
+<meta name="description" content="100 個高中教學 Reels 提示詞範例：搜尋、收藏、套用、自訂分鏡，一鍵複製 AI 影片提示詞。">
+<title>Reels 教學短影音提示詞工作室｜100 個實用範例</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // 在首次繪製前套用色系，避免閃爍
+  try{const s=JSON.parse(localStorage.getItem('reels-settings'))||{};const t=s.theme==='暗色'?'dark':s.theme==='亮色'?'light':(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch{}
+</script>
+</head>
+<body>
+<!-- 圖示（Lucide 風格，stroke 線條） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2-2 0-7.4-4.5-11.9S5.8 1.8 3.8 3.8s0 7.4 4.5 11.9 9.9 6.5 11.9 4.5Z"/><path d="M15.7 15.7c4.5-4.5 6.5-9.9 4.5-11.9s-7.4 0-11.9 4.5-6.5 9.9-4.5 11.9 7.4 0 11.9-4.5Z"/></symbol>
+    <symbol id="i-sigma" viewBox="0 0 24 24"><path d="M18 7V4H6l6 8-6 8h12v-3"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6C9.5 14.5 12 13 13 12"/></symbol>
+    <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/><path d="M3.2 12h6.3l.5-1 2 4.5 2-7 1.5 3.5h5.3"/></symbol>
+    <symbol id="i-book-open" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.6 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.6 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2a10 10 0 0 0 0 20c.9 0 1.6-.7 1.6-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1a1.6 1.6 0 0 1 1.6-1.7h2a5.6 5.6 0 0 0 5.6-5.5C22 6 17.5 2 12 2z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.8-1.1 2-1.7 3.3-1.7H22M18 2l4 4-4 4M2 6h1.9c1.5 0 2.9.9 3.6 2.2M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8M18 14l4 4-4 4"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.9l12-7.5a1 1 0 0 0 0-1.8l-12-7.5A1 1 0 0 0 7 4.5Z"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4zM22 2 11 13"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.8 9.8 0 0 0-6.7 2.7L3 8M3 3v5h5"/></symbol>
+    <symbol id="i-install" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 7v7M9 11l3 3 3-3"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">跳到主要內容</a>
+
+<div id="app" class="app-shell">
+  <header class="topbar" id="topbar">
+    <a href="#top" class="brand" aria-label="Reels 教學短影音工作室 首頁">
+      <span class="brand-mark" aria-hidden="true"><svg class="ic fill"><use href="#i-play"/></svg></span>
+      <span class="brand-text">Reels 教學短影音<b>工作室</b></span>
+    </a>
+    <nav class="main-nav" aria-label="主要導覽">
+      <a href="#examples" data-nav="examples" data-i18n="navExamples">範例庫</a>
+      <a href="#studio" data-nav="studio" data-i18n="navStudio">提示詞組合器</a>
+      <a href="#guide" data-nav="guide" data-i18n="navGuide">製作檢核</a>
+    </nav>
+    <div class="top-actions">
+      <span id="offlineLabel" class="offline-label" hidden>離線模式</span>
+      <button class="btn ghost sm" id="installBtn" hidden><svg class="ic"><use href="#i-install"/></svg><span>安裝 App</span></button>
+      <button class="icon-btn" id="themeToggle" aria-label="切換明暗色系" title="切換明暗色系"><svg class="ic"><use href="#i-moon"/></svg></button>
+      <button class="icon-btn" id="settingsOpen" aria-label="顯示與操作設定" title="顯示與操作設定"><svg class="ic"><use href="#i-settings"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="rec-dot" aria-hidden="true"></span><span data-i18n="heroEyebrow">高中教學 · 科普解說 · 國際新聞</span></span>
+        <h1 data-i18n="heroTitle">讓每一堂課，<br>都能變成<em>精彩短影音</em></h1>
+        <p class="lead" data-i18n="heroDesc">100 個靈感範例、20 個製作參數。挑一個題目、調整風格與節奏，就能得到可直接貼給 AI 影片工具的完整提示詞與分鏡表。</p>
+        <div class="hero-actions">
+          <a href="#studio" class="btn primary lg"><svg class="ic"><use href="#i-sparkle"/></svg><span data-i18n="ctaStudio">開始製作提示詞</span></a>
+          <a href="#examples" class="btn outline lg"><span data-i18n="ctaBrowse">瀏覽 100 個範例</span><svg class="ic"><use href="#i-right"/></svg></a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt data-i18n="statExamples">精選範例</dt><dd id="statExamples">100</dd></div>
+          <div><dt data-i18n="statCategories">主題分類</dt><dd id="statCategories">10</dd></div>
+          <div><dt data-i18n="statParams">製作參數</dt><dd id="statParams">20</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-stage" aria-hidden="true">
+        <div class="stage-grid"></div>
+        <div class="phone" id="heroPhone">
+          <div class="phone-screen" id="heroScreen">
+            <div class="reel-progress"><i></i><i></i><i></i><i></i></div>
+            <div class="reel-top"><span class="reel-chip" id="heroCat">科學與宇宙</span><span class="reel-time" id="heroDur">0:30</span></div>
+            <div class="reel-icon"><svg class="ic"><use id="heroIcon" href="#i-atom"/></svg></div>
+            <div class="reel-side"><span><svg class="ic"><use href="#i-heart"/></svg></span><span><svg class="ic"><use href="#i-msg"/></svg></span><span><svg class="ic"><use href="#i-send"/></svg></span></div>
+            <div class="reel-bottom">
+              <span class="reel-hook" id="heroHook">你知道嗎？</span>
+              <strong class="reel-title" id="heroTitle">絕對零度為什麼是 -273.15°C？</strong>
+              <span class="reel-meta" id="heroMeta">科技資訊圖表 · 好奇探索</span>
+            </div>
+          </div>
+        </div>
+        <div class="stage-note n1"><svg class="ic"><use href="#i-sparkle"/></svg>AI 腳本</div>
+        <div class="stage-note n2"><svg class="ic"><use href="#i-table"/></svg>自動分鏡</div>
+        <div class="stage-note n3"><svg class="ic"><use href="#i-msg"/></svg>配音字幕</div>
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="section workflow" aria-labelledby="flowTitle">
+      <div class="section-head">
+        <span class="kicker">WORKFLOW</span>
+        <h2 id="flowTitle" data-i18n="flow">七步驟影片製作流程</h2>
+        <p>本站負責前三步：把想法整理成精準的提示詞與分鏡草案。後續生成、配音與剪輯，交給你慣用的 AI 影片工具與剪輯軟體。</p>
+      </div>
+      <ol id="flowSteps" class="flow-track"></ol>
+    </section>
+
+    <!-- EXAMPLES -->
+    <section id="examples" class="section examples" aria-labelledby="examplesTitle">
+      <div class="section-head split">
+        <div>
+          <span class="kicker">IDEA LIBRARY</span>
+          <h2 id="examplesTitle" data-i18n="examples">100 個教學短影音範例</h2>
+          <p>依分類或關鍵字找題目，預覽分鏡方向，一鍵套用到提示詞組合器。</p>
+        </div>
+        <button class="btn outline" id="randomPick"><svg class="ic"><use href="#i-shuffle"/></svg>隨機給我一個靈感</button>
+      </div>
+
+      <div class="toolbar">
+        <label class="searchbox">
+          <svg class="ic"><use href="#i-search"/></svg>
+          <input id="searchInput" type="search" placeholder="搜尋標題、分類、風格、關鍵字…" autocomplete="off" aria-label="搜尋範例">
+          <kbd class="kbd" aria-hidden="true">/</kbd>
+        </label>
+        <div class="toolbar-right">
+          <label class="select-wrap"><span class="sr-only">排序</span>
+            <select id="sortSelect" aria-label="排序">
+              <option value="id">依範例編號</option>
+              <option value="title">依名稱排序</option>
+              <option value="duration">依片長（短→長）</option>
+            </select>
+          </label>
+          <button class="btn outline toggle" id="favoriteFilter" aria-pressed="false"><svg class="ic"><use href="#i-star"/></svg><span>我的收藏</span><span class="badge" id="favCount">0</span></button>
+        </div>
+      </div>
+
+      <div class="categories" id="categories" role="toolbar" aria-label="分類篩選"></div>
+
+      <div class="result-line"><span id="resultCount" aria-live="polite">100 個範例</span></div>
+      <div class="cards" id="cards"></div>
+      <div class="empty" id="emptyState" hidden>
+        <svg class="ic"><use href="#i-search"/></svg>
+        <p id="emptyText">找不到符合條件的範例。試著更換關鍵字或分類。</p>
+        <button class="btn outline sm" id="clearFilters">清除篩選</button>
+      </div>
+      <nav class="pagination" id="pagination" aria-label="分頁"></nav>
+    </section>
+
+    <!-- STUDIO -->
+    <section id="studio" class="section studio" aria-labelledby="studioTitle">
+      <div class="section-head split">
+        <div>
+          <span class="kicker">PROMPT BUILDER</span>
+          <h2 id="studioTitle" data-i18n="studioTitle">AI 影片提示詞組合器</h2>
+          <p>左側調整參數，右側即時生成提示詞與分鏡時間軸。設定會自動保存在這台裝置。</p>
+        </div>
+        <div class="head-actions">
+          <button class="btn outline sm" id="shuffleStyle"><svg class="ic"><use href="#i-shuffle"/></svg>隨機搭配風格</button>
+          <button class="btn outline sm" id="resetPrompt"><svg class="ic"><use href="#i-reset"/></svg>重設</button>
+        </div>
+      </div>
+
+      <div class="studio-grid">
+        <div class="panel controls">
+          <div class="field-block">
+            <label class="field"><span class="field-label">影片主題 <em>必填</em></span>
+              <textarea id="topicInput" rows="2"></textarea>
+            </label>
+            <label class="field"><span class="field-label">目標觀眾</span>
+              <input id="audienceInput">
+            </label>
+            <div class="applied" id="appliedFrom" hidden></div>
+          </div>
+          <div id="promptFields" class="groups"></div>
+          <label class="field"><span class="field-label">補充指示</span>
+            <textarea id="customInput" rows="3" placeholder="例如：引用可靠來源、加入一題觀念測驗、避免使用英文縮寫…"></textarea>
+          </label>
+        </div>
+
+        <div class="panel preview" id="previewPanel">
+          <div class="preview-head">
+            <div class="tabs" role="tablist" aria-label="預覽模式">
+              <button role="tab" id="tabPrompt" aria-selected="true" aria-controls="panePrompt">提示詞</button>
+              <button role="tab" id="tabBoard" aria-selected="false" aria-controls="paneBoard" tabindex="-1">分鏡時間軸</button>
+            </div>
+            <span id="promptLength" class="word-count"></span>
+          </div>
+          <div id="panePrompt" role="tabpanel" aria-labelledby="tabPrompt">
+            <pre id="promptOutput" class="prompt-text" tabindex="0"></pre>
+          </div>
+          <div id="paneBoard" role="tabpanel" aria-labelledby="tabBoard" hidden>
+            <div id="boardTimeline" class="timeline"></div>
+            <ol id="boardList" class="shot-list"></ol>
+          </div>
+          <div class="preview-actions">
+            <button class="btn primary" id="copyPrompt"><svg class="ic"><use href="#i-copy"/></svg><span>複製提示詞</span></button>
+            <button class="btn outline" id="downloadPrompt"><svg class="ic"><use href="#i-download"/></svg>下載 TXT</button>
+            <button class="btn outline" id="downloadStoryboard"><svg class="ic"><use href="#i-table"/></svg>匯出分鏡 CSV</button>
+          </div>
+          <p class="note">影片模型不一定能一次完成長片、精準中文字與聲畫同步。建議依分鏡逐段生成，再用剪輯軟體配音、上字幕與合成。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE -->
+    <section id="guide" class="section guide" aria-labelledby="guideTitle">
+      <div class="section-head">
+        <span class="kicker">PRODUCTION GUIDE</span>
+        <h2 id="guideTitle" data-i18n="guide">短影音製作檢核表</h2>
+      </div>
+      <div class="tip-grid">
+        <article class="tip"><span class="tip-no">01</span><h3>9:16 直式優先</h3><p>建議 1080×1920；重要文字避開上方、底部及右側平台介面。</p></article>
+        <article class="tip"><span class="tip-no">02</span><h3>前三秒抓住注意</h3><p>用提問、誤解、驚人現象或直接展示成果，引導觀眾繼續看。</p></article>
+        <article class="tip"><span class="tip-no">03</span><h3>新聞與科普先查證</h3><p>時事註明事件日期與資料來源；科學數據查核單位、公式及適用條件。</p></article>
+        <article class="tip"><span class="tip-no">04</span><h3>字幕與無障礙</h3><p>繁體中文、充足對比、易讀字級；靜音觀看也能理解內容。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><span class="brand-mark sm" aria-hidden="true"><svg class="ic fill"><use href="#i-play"/></svg></span> Reels 教學短影音工作室 <span class="muted">· 靜態網頁 / PWA · 不需 API Key</span></div>
+    <a href="#top">回到頂部 ↑</a>
+  </footer>
+</div>
+
+<!-- 手機版：固定複製列 -->
+<div class="mobile-bar" id="mobileBar" hidden>
+  <span id="mobileBarInfo">提示詞已就緒</span>
+  <button class="btn primary sm" id="mobileCopy"><svg class="ic"><use href="#i-copy"/></svg>複製</button>
+</div>
+
+<!-- 設定 -->
+<div class="modal-backdrop" id="settingsModal" hidden>
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <div class="modal-head">
+      <div><span class="kicker">PREFERENCES</span><h2 id="settingsTitle" data-i18n="settings">顯示與操作設定</h2></div>
+      <button class="icon-btn" data-close aria-label="關閉設定"><svg class="ic"><use href="#i-x"/></svg></button>
+    </div>
+    <div id="settingsFields" class="setting-list"></div>
+    <div class="modal-foot">
+      <button class="btn ghost" id="settingsReset">恢復預設</button>
+      <button class="btn primary" data-close>完成</button>
+    </div>
+  </section>
+</div>
+
+<!-- 範例詳情 -->
+<div class="modal-backdrop" id="detailModal" hidden>
+  <section class="modal detail" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <div class="detail-cover" id="detailCover"></div>
+    <div class="modal-head">
+      <div><span class="kicker" id="detailKicker"></span><h2 id="detailTitle"></h2></div>
+      <button class="icon-btn" data-close aria-label="關閉預覽"><svg class="ic"><use href="#i-x"/></svg></button>
+    </div>
+    <div id="detailContent"></div>
+    <div class="modal-foot spread">
+      <div class="nav-pair">
+        <button class="icon-btn" id="detailPrev" aria-label="上一個範例"><svg class="ic"><use href="#i-left"/></svg></button>
+        <button class="icon-btn" id="detailNext" aria-label="下一個範例"><svg class="ic"><use href="#i-right"/></svg></button>
+      </div>
+      <div class="nav-pair">
+        <button class="btn outline" id="detailFav"></button>
+        <button class="btn primary" id="detailUse">套用到組合器<svg class="ic"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script defer src="app.js"></script>
+</body>
+</html>
